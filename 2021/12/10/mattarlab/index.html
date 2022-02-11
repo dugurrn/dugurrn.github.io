@@ -22,14 +22,15 @@
 
   <meta name="description" content="This project analyzes the human decision-making process and its relationship with eye movement.  Based on the previous Bonsai experiment, our experiment added the feature of web-cam eye-tracking, whic">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mattar Lab">
+<meta property="og:title" content="Mattar Lab - Decision Making and Eye Tracking Project">
 <meta property="og:url" content="http://example.com/2021/12/10/mattarlab/index.html">
 <meta property="og:site_name" content="Hannah&#39;s Personal Website">
 <meta property="og:description" content="This project analyzes the human decision-making process and its relationship with eye movement.  Based on the previous Bonsai experiment, our experiment added the feature of web-cam eye-tracking, whic">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/mattar1.png">
+<meta property="og:image" content="http://example.com/2021/12/10/mattarlab/mattar2.png">
 <meta property="article:published_time" content="2021-12-10T10:24:46.000Z">
-<meta property="article:modified_time" content="2022-02-11T01:02:28.962Z">
+<meta property="article:modified_time" content="2022-02-11T02:00:15.791Z">
 <meta property="article:author" content="Hannah Lyu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/mattar1.png">
@@ -47,7 +48,7 @@
   };
 </script>
 
-  <title>Mattar Lab | Hannah's Personal Website</title>
+  <title>Mattar Lab - Decision Making and Eye Tracking Project | Hannah's Personal Website</title>
   
 
 
@@ -175,7 +176,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Mattar Lab
+          Mattar Lab - Decision Making and Eye Tracking Project
         </h1>
 
         <div class="post-meta">
@@ -192,7 +193,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-10 17:02:28" itemprop="dateModified" datetime="2022-02-10T17:02:28-08:00">2022-02-10</time>
+                <time title="Modified: 2022-02-10 18:00:15" itemprop="dateModified" datetime="2022-02-10T18:00:15-08:00">2022-02-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -215,13 +216,38 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>This project analyzes the human decision-making process and its relationship with eye movement. <br>
-Based on the previous Bonsai experiment, our experiment added the feature of web-cam eye-tracking, which 
-allows us to retrieve eye tracking big data and make analysis.  </p>
+        <p>This project analyzes the human decision-making process and its relationship with eye movement. </p>
+<p>Based on the previous Bonsai experiment, our experiment added the feature of web-cam eye-tracking, which allows us to retrieve eye tracking big data and make analysis.  </p>
 
 <h4> Experiment Design </h4>
 
 <p><img src="/mattar1.png" alt="Experiment Procedure" title="Experiment Procedure"></p>
+<p> The experiments is conducted with 2 phases, along with an eye-tracking calibration and validation. </p>
+<p>Eye-tracking calibration and validation is conducted first. This is to make sure whether the participant's working environment is suitable for this experiment. If they fail the validation three times, the experiment will automatically end. </p>
+<p>In phase 1 of the experiment, 40 trials will be conducted by the participant to learn the path of six boxes. LEFT and RIGHT key presses are allowed. From each box, a LEFT key press can always lead to one other specific box. Similarly, a RIGHT key press can always lead to another box. Below is a demo of the box positions. </p>
+
+<img src="mattar2.png"  style="width:70%;height:70%;">
+
+<p> In phase 2 of the experiment, the participant would perform 30 trials on a path selection and reward task. Given the starting box and the number of steps allowed, the participant can think for 9 seconds and press the moves all at once. Boxes are shown with possble outcomes like "--/+++", in which one of the allowed key press would always grant one of the outcomes. It is the participants' responsiblity to learn the relationship. </p>
+
+<h4> Methods </h4>
+
+<p> This experiment is implemented using JavaScript. Data Analysis are conducted using Python. We are still in the progress of revising and conducting the experiment, and analyzing data. <p>
+
+<h4> Sub-Branches </h4>
+
+<p> A sub-branch of this experiment uses the same terminology. However, instead of using the web-camera for eye tracking, we uses a real eye-tracker to retrieve eye movement data. Since data with a real eye-tracker is more accurate, this can help us identify some relationship between decision making and eye movement. The result can be compared with the main branch (web-cam eye-tracking) to infer on the accuracy of the web-cam eye-tracking experiment. </p>
+
+<p>Another sub-branch of this experiment also uses the same terminology, but excluded eye-tracking. This allows us to examine the decision-making patterns, to better understand the relationship between decision-making process and eye-movement. </p>
+
+<h4> My work in this project </h4>
+
+<p>As a team, we collabratively came up with the experimental design, and implemented the experiment. We all took some part on analyzing the data, and coded for visual representation for a clearer understanding. </p>
+<p> My main focus of this experiment is on the sub-branch of conducting the experiment using a real-eye tracker. I achieved the integration of the device and the experiment. Eye-tracking data are primarily saved as a video. Thus, I implemented Computer Vision algorithms to label the eye fixation points to different boxes for futher analysis. This sub-branch is conducting in progress. </p>
+
+<h4> More Information </h4>
+<p> This is a project conducted in the Mattar Lab in the Cognitive Science Department of University of California, San Diego. </p>
+<p> MANY THANKS to Dr.Mattar as the supervisor, and my teammates who work on other parts of this experiments while offering me so much help. </p>
 
     </div>
 
@@ -292,7 +318,7 @@ allows us to retrieve eye tracking big data and make analysis.  </p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text"> Experiment Design </span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text"> Experiment Design </span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text"> Methods </span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">3.</span> <span class="nav-text"> Sub-Branches </span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">4.</span> <span class="nav-text"> My work in this project </span></a></li><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">5.</span> <span class="nav-text"> More Information </span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
